@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klarstein</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Top Notification Banner -->
+  <div class="top-banner">
+    <p>Start spring with hot deals!</p>
+  </div>
+
+  <!-- Return Policy Bar -->
+  <div class="return-policy">
+    <span>🔁 14-day return policy</span>
+    <span><a href="#">Help, contact and returns</a></span>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">KLARSTEIN</div>
+    <nav class="nav">
+      <a href="#">Offers</a>
+      <a href="#">New products</a>
+      <a href="#">B-stock</a>
+    </nav>
+    <div class="icons">
+      <span>👤</span>
+      <span>❤️</span>
+      <span>🛒</span>
+    </div>
+  </header>
+
+  <!-- Category Navigation Bar -->
+  <nav class="category-nav">
+    <a href="#">household appliances</a>
+    <a href="#">Kitchen appliances</a>
+    <a href="#">Heat</a>
+    <a href="#">Air conditioning units</a>
+    <a href="#">Air freshener</a>
+    <a href="#">Outdoor grills</a>
+    <a href="#">Garden</a>
+    <a href="#">Audio & HiFi</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Get your home ready for spring!</h1>
+        <p>Upgrade your household appliances and save big</p>
+        <button>Save now</button>
+      </div>
+      <div class="hero-images">
+        <img src="images/stand-mixer.jpg" alt="Stand Mixer">
+        <img src="images/wine-cooler.jpg" alt="Wine Cooler">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="product-grid">
+    <h2>Featured Products</h2>
+    <div class="grid">
+      <div class="product-card">
+        <img src="images/product1.jpg" alt="Blender Pro">
+        <h3>Blender Pro</h3>
+        <p>€89.99</p>
+        <button>Add to Cart</button>
+        <button onclick="openModal('Blender Pro', 'images/product1.jpg', 'High-power blender perfect for smoothies.', '€89.99')">View Details</button>
+
+      </div>
+      <div class="product-card">
+        <img src="images/product2.jpg" alt="Smart Air Fryer">
+        <h3>Smart Air Fryer</h3>
+        <p>€119.99</p>
+        <button>Add to Cart</button>
+        <button onclick="openModal('Air Frier', 'images/product2.jpg', 'High-power Air frier to make delicious dishes.', '€119.99')">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="images/kitchen.jpg" alt="Kitchen Appliances">
+        <h3>Kitchen Appliances</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/aircool.jpg" alt="Air Conditioning">
+        <h3>Air Conditioning</h3>
+      </div>
+      <div class="category-card">
+        <img src="images/audio.jpg" alt="Audio & HiFi">
+        <h3>Audio & HiFi</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Subscribe to our newsletter</h2>
+    <p>Get exclusive deals and the latest product news.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Klarstein. All rights reserved.</p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+  </footer>
+
+  <div class="modal hidden" id="productModal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">×</span>
+      <img id="modalImg" src="" alt="Product image">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <strong id="modalPrice"></strong>
+    </div>
+  </div>
+  
+</body>
+</html>
